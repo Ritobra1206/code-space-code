@@ -4,7 +4,6 @@ import LoginPage from '@/pages/auth/LoginPage';
 import RegisterPage from '@/pages/auth/RegisterPage';
 import DashPage from '@/pages/dashboard/DashPage';
 import { useState } from 'react';
-import "./App.css"
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

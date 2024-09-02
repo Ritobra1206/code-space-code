@@ -58,7 +58,7 @@ export default function RegisterPage({ onRegisterSuccess }) {
   };
 
   return (
-    <>
+    <div className="bg-[url('https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg')] bg-cover bg-center min-h-screen w-full flex items-center justify-center">
       <Card className="w-[350px]">
         <CardHeader>
           <CardTitle>Register</CardTitle>
@@ -107,6 +107,6 @@ export default function RegisterPage({ onRegisterSuccess }) {
         </CardContent>
       </Card>
       <ToastContainer />
-    </>
+    </div>
   );
 }

@@ -40,7 +40,7 @@ export default function LoginPage({ onLoginSuccess }) {
   };
 
   return (
-    <>
+    <div className="bg-[url('https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg')] bg-cover bg-center min-h-screen w-full flex items-center justify-center">
       <Card className="w-[350px]">
         <CardHeader>
           <CardTitle>Login</CardTitle>
@@ -79,29 +79,6 @@ export default function LoginPage({ onLoginSuccess }) {
         </CardContent>
       </Card>
       <ToastContainer />
-    </>
+    </div>
   );
 }
-
-
-// Backend integration example (commented):
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
-//   try {
-//     const response = await fetch('/api/login', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({ email, password }),
-//     });
-//     const result = await response.json();
-//     if (result.success) {
-//       toast.success("Login successful!");
-//     } else {
-//       toast.error(result.message || "Invalid email or password.");
-//     }
-//   } catch (error) {
-//     toast.error("An error occurred. Please try again.");
-//   }
-// };
